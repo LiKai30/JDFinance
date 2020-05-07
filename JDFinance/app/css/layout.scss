@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+// 相当于定义一个函数,使用$表示变量，这里参数设置了默认值
+@mixin flex($direction:column, $inline:block) {
+    display: if($inline==block, flex, inline-flex);
+    flex-direction: $direction;
+    flex-wrap: wrap;
+}
