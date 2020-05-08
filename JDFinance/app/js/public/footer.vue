@@ -32,6 +32,8 @@ export default {
     components: {
         Panel,
     },
+
+    // 为了让其他页面引入的时侯控制显示不同的广告
     props: {
         cname: {
             type: String,
